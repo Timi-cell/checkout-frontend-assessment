@@ -92,6 +92,7 @@ export default function Field({
           onChange={(e) => onInputChange?.(e.target.value)}
           placeholder={placeholder}
           readOnly={!!inputValue}
+          maxLength={label === "Account number" ? 10 : undefined}
         />
       )}
 

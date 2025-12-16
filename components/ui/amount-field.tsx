@@ -6,6 +6,7 @@ import { useEffect, useRef, useState } from "react";
 import { Token } from "@/types/wallet";
 import { Search } from "lucide-react";
 
+
 type AmountInputProps = {
   label: string;
   value: string;

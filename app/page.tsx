@@ -15,7 +15,6 @@ export default function ConvertCard() {
   const [tokenSearchValue, setTokenSearchValue] = useState("");
   const [receiveAmount, setReceiveAmount] = useState("1.00");
   const [activeTab, setActiveTab] = useState(checkoutTabs[0].value);
-  // const [selectedToken, setSelectedToken] = useState<Token>(tokens[0]);
 
   const payFromOptions: SelectOption[] = walletTypes.map(
     (wallet: WalletOption) => ({
@@ -52,6 +51,9 @@ export default function ConvertCard() {
         value={receiveAmount}
         onChange={setReceiveAmount}
         tokenValue="NGN"
+        tokenSearchValue={tokenSearchValue}
+        onSearchTokenChange={setTokenSearchValue}
+        options={tokens}
       />
       <Field
         label="Pay from"

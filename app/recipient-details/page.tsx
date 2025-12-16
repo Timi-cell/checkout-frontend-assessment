@@ -27,7 +27,7 @@ export default function RecipientDetails() {
         label="Account name"
         select={false}
         inputValue="ODUTUGA GBEKE"
-        extraStyles="bg-[#F2F2F2] text-[#013941] font-normal"
+        extraStyles="bg-[#F2F2F2] text-[#013941] font-normal cursor-not-allowed"
       />
       <div className="mt-20">
         <Button text="Next" />
